@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Micaela Silva | Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+
+    <div class="wrapper">
+
+              <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="trabalho.html">Trabalho</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+              </ul>
+
+    </div>
+
+
+
+  <a href="index.html"> <h1> Micaela Silva </h1> </a>
+
+<div class = "fade-in-text">
+
+
+            <div class ='titulodesigner'>
+                    <h1> digital designer &<br /> desenhadora </h1>
+                </div>
+
+
+            <div class = "subtitulo" >
+                <p>+ Design, 2D e 3D, Redes Sociais</p>
+            </div>
+
+
+</div>
+
+
+
+       <div class ='fade-in-lento'>
+
+
+    <div class="linha">
+
+          <div class="coluna">
+              <div class="texto1">
+                <p></p>
+                </div>
+          </div>
+
+          <div class="coluna">
+                 <div class="texto1">
+
+                    <p> Participo em vários projetos extracurriculares onde exploro fotografia e comunicação.
+                        Boas capaciades para desenhar produtos, renderização e desenhos técnicos.
+                        Sou curiosa e procuro sempre melhorar as minhas aptidões. </p>
+                     </div>
+          </div>
+    </div>
+
+
+
+       </div>
+
+
+</br>
+<div class = 'bloco'></div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="xisto.png" style="width:100%">
+  <div class="text"><a href="trabalho.html">Ver mais</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="curva.jpg" style="width:100%">
+  <div class="text"><a href="trabalho.html">Ver mais</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="avo.png" style="width:100%">
+  <div class="text"><a href="trabalho.html">Ver mais</a></div>
+</div>
+
+    <div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="vilnho talha.jpg" style="width:100%">
+  <div class="text"><a href="trabalho.html">Ver mais</a></div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+</br>
+
+
+
+</body>
+
+
+
+    <footer>
+
+               <br/>
+
+        <div  class="socialbtns">
+
+            <ul>
+                <li><a href="https://www.behance.net/micaela-silva" class="fa fa-lg fa-behance"></a></li>
+                <li><a href="https://www.pinterest.pt/micaelavsilva" class="fa fa-lg fa-pinterest"></a></li>
+                <li><a href="https://www.linkedin.com/in/micaela-silva-8772a3217/" class="fa fa-lg fa-linkedin"></a></li>
+                <li><a href="https://www.instagram.com/micaela.silv_/" class="fa fa-lg fa-instagram"></a></li>
+            </ul>
+
+        </div>
+
+        <div class ="assinatura">
+    <p> Desenhado e desenvolvido por Micaela Silva, 2022. </p>
+</div>
+
+    </footer>
+
+</html>

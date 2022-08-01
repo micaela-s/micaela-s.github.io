@@ -119,19 +119,20 @@ h1{
     margin-left: 20px;
 }
 
+/* Subtítulo da Pagina*/
 
 
-
-
-/* Subtítulo da Pagina */
-
-h2 {
+h2{
     font-size: 4.5em;
+}
+
+
+.subh2{
+
     margin-left: 245px;
     margin-top: 0px;
     margin-bottom: 170px;
-
-    }
+}
 
 
 
@@ -150,15 +151,19 @@ h3 {
 
 h4 {
 
-    text-align: left;
     font-family: Helvetica,sans-serif;
     font-weight: 900;
     font-size: 9em;
     color: #F6F6F6;
-    margin-bottom: -90px;
 
 }
 
+
+.subh4{
+
+    margin-bottom: -90px;
+
+}
 
 
 h5{
@@ -175,8 +180,9 @@ h5{
 
 
 
+
 .titulodesigner{
-   text-align: right;
+    text-align: right;
     color: #363636;
     font-size: 4em;
     margin-right: 6%;
@@ -191,35 +197,37 @@ h5{
     font-size: 2em;
     color: #828282;
     margin-right: 6.5%;
-    margin-top: 0px;
-    margin-bottom: 275px;
+    margin-bottom: 200px;
+}
+
+
+.divisao{
+    box-sizing: border-box;
+    float:left;
+    with: 40%;
 }
 
 
 
+.bemvindo{
+    margin-bottom: -90px;
+}
+
 .texto1{
-    margin-left: 100px;
+
+    width: 40%;
     font-family: Garamond, serif;
     font-size: 1.5em;
     color: #828282;
+    padding-left: 50px;
 }
 
 
+#apresentacao{
+    font-family: helvetica, sans-serif;
+     color: #a6a6a6;
+    }
 
-.coluna {
-  float: left;
-  width: 40%;
-  margin-left: 30px;
-  margin-right: 6%;
-  margin-bottom: 100px;
-  }
-
-
-.linha:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 
 
@@ -231,55 +239,33 @@ h5{
  /* Sobre*/
 
 
-.colunaesq {
-  width:400px;
-  height: 1400px;
+.colunatxt {
+  box-sizing: border-box;
   float: left;
-  margin-top: -35px;
-  margin-left: 250px;
-  margin-right: 200px;
-  font-weight: 400;
+  width: 45%;
+  padding: 10px;
   font-family: Helvetica,sans-serif;
 }
 
-.colunadrt {
-    width: 850px;
-    height: 1400px;
-    margin-left: 40%;
-    margin-right: 20%;
-    }
+
+.direita{
+margin-left: 250px;
+}
 
 .corrido{
 line-height:1.4;
 }
 
+@media screen and (max-width: 600px) {
+  .direita {
+    margin-left: 0px;
+  }}
 
 
- /* animações*/
-
-.fade-in-text {
-  animation: fadeIn 1.2s;
-}
-
-.fade-in-lento {
-  animation: fadeIn 3s;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0;}
-  100% { opacity: 1;}
-}
-
-
-a:-webkit-any-link {
-    color: #000;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-
-
-
+@media screen and (max-width: 600px) {
+  .colunatxt {
+    width: 100%;
+  }}
 
 
 
@@ -290,7 +276,7 @@ a:-webkit-any-link {
     text-align: center;
     margin-left: -50%;
     margin-top: 20%;
-    margin-bottom: -160px;
+    margin-bottom: -140px;
 }
 
 
@@ -300,15 +286,18 @@ a:-webkit-any-link {
 
 
 .column {
-  float: left;
-  width: 30%;
+  display: inline-flex;
+  width: calc(100% / 3 - 50px);
   padding-top: 50px;
   padding-bottom: 30px;
   padding-left: 50px;
 }
 
 
-.row {margin: 0 -5px;}
+.row {
+margin: 0;
+}
+
 
 .row:after {
   content: "";
@@ -319,7 +308,6 @@ a:-webkit-any-link {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 12px;
   text-align: center;
   background-color: #f1f1f1;
   transition: 0.3s;
@@ -333,6 +321,108 @@ a:-webkit-any-link {
 img {
   border-radius: 10px 10px 10px 10px;
 }
+
+
+
+
+
+
+/*imagens subpaginas*/
+
+#comp{
+
+    max-width: 700px;
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+
+
+
+#bilheteira{
+
+    max-width: 900px;
+    height: auto;
+    float: right;
+    margin-right: 8%;
+    margin-bottom:50px;
+    margin-top: -700px;
+}
+
+
+
+#abrigo{
+
+    max-width: 1000px;
+    height: auto;
+    margin-left: 20%;
+    margin-bottom:50px;
+}
+
+
+
+
+
+/*imagens XISTO - subpagina de trabalho*/
+
+.centro {
+  max-width: 100%;
+  margin: 70px;;
+}
+
+
+
+/* Create four equal columns that floats next to each other */
+.columa {
+  float: left;
+  width: 20%;
+  padding: 0px;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .columa {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columa {
+    width: 100%;
+  }
+}
+
+
+
+
+/* BACK BUTTON - de subpaginas de trabalho */
+
+#back{
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: -50px;
+  margin-right: 30px;
+}
+
+
+/* texto das subpaginas de trabalho */
+
+.descr{
+    margin-left: 100px;
+    font-family: Garamond, serif;
+    font-size: 1.5em;
+    color: #828282;
+}
+
+
+@media screen and (max-width: 600px) {
+  .descr {
+    width: 100%;
+  }}
 
 
 
@@ -384,9 +474,10 @@ margin:auto;
 
 /* Galeria */
 
+
 .bloco{
-   background: #f1f1f1;
-    height: 565px;
+  background: #f1f1f1;
+  height: 565px;
   margin-top: 30px;
   margin-bottom: -565px;
 }
@@ -394,7 +485,11 @@ margin:auto;
 .mySlides {display: none}
 
 
+
+
 /* Slideshow container */
+
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -402,6 +497,7 @@ margin:auto;
   box-sizing: border-box;
   vertical-align: middle;
 }
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -432,14 +528,16 @@ margin:auto;
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  font-size: 20px;
+  padding: 8px ;
   position: absolute;
-  bottom: 8px;
+  bottom: -110px;
   width: 100%;
   text-align: center;
+  text-decoration: underline;
 }
+
+
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -488,120 +586,20 @@ margin:auto;
 
 
 
-/*imagens */
-
-#comp{
-
-    max-width: 600px;
-    height: auto;
-    float: right;
-    margin-right: 10%;
-    margin-bottom:50px;
-    margin-top: -200px;
-}
-
-
-
-
-#bilheteira{
-
-    max-width: 900px;
-    height: auto;
-    float: right;
-    margin-right: 8%;
-    margin-bottom:50px;
-    margin-top: -700px;
-}
-
-
-
-#abrigo{
-
-    max-width: 1000px;
-    height: auto;
-    margin-left: 20%;
-    margin-bottom:50px;
-}
-
-
-
-
-
-/*grid*/
-
-.centro {
-  max-width: 100%;
-  margin: 70px;;
-}
-.lina {
-  margin: 8px -16px;
-
-}
-
-
-/* Create four equal columns that floats next to each other */
-.columa {
-  float: left;
-  width: 20%;
-  padding:0px;
-}
-
-
-/* Clear floats after rows */
-.lina:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .columa {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .columa {
-    width: 100%;
-  }
-}
-
-
-
-
-/* BACK BUTTON */
-
-#back{
-  width: 50px;
-  height: 50px;
-  float: right;
-  margin-top: -50px;
-  margin-right: 30px;
-}
-
-
-
-.descr{
-    margin-left: 100px;
-    font-family: Garamond, serif;
-    font-size: 1.5em;
-    color: #828282;
-}
-
-
-
 
 /* footer */
+
+
 
 
 footer {
     height: 150px;
     background-color: black;
+    margin-top: 100px;
+    padding:10px;
 }
+
+
 
 
 
@@ -610,12 +608,13 @@ footer {
 
 .assinatura{
     font-size:0.75em;
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
     color: #828282;
     text-size: 0.7em;
 
 }
+
 
 
 
@@ -661,6 +660,9 @@ a, a:hover {
 
 
 
+
+
+
 /* RESPONSIVO */
 
 
@@ -676,17 +678,6 @@ a, a:hover {
     display:block;
  }
 
-  .colunaesq{
-   with:50%
-   display:block;
-   margin-bottom: 30px;
-   }
-
-.colunadrt{
-with:50%
-display:block;
-margin-bottom: 30px;
-}
 
   .textocoluna{
      with:50%
@@ -696,6 +687,9 @@ margin-bottom: 30px;
 }
 
 
+
+
+
 @media screen and (max-width: 600px) {
 
   .column {
@@ -703,22 +697,11 @@ margin-bottom: 30px;
     display: block;
     margin-bottom: 30px;
   }
+
    .carta{
     with:100%
     display:block;
  }
- .colunaesq{
-    with:100%
-   display:block;
-   margin-bottom: 30px;
-   }
-
-
-.colunadrt{
-with:100%
-display:block;
-margin-bottom: 30px;
-}
 
 
  .textocoluna{
@@ -728,3 +711,38 @@ margin-bottom: 30px;
  }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+ /* animações*/
+
+.fade-in-text {
+  animation: fadeIn 1.2s;
+}
+
+.fade-in-lento {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+
+a:-webkit-any-link {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+

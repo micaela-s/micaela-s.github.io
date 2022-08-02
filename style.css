@@ -272,11 +272,9 @@ line-height:1.4;
 /*Trabalho */
 
 .textocoluna{
+
     font-size: 0.75em;
     text-align: center;
-    margin-left: -50%;
-    margin-top: 20%;
-    margin-bottom: -140px;
 }
 
 
@@ -287,7 +285,7 @@ line-height:1.4;
 
 .column {
   display: inline-flex;
-  width: calc(100% / 3 - 50px);
+  width: calc(97% / 3 - 50px);
   padding-top: 50px;
   padding-bottom: 30px;
   padding-left: 50px;
